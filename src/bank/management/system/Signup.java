@@ -219,7 +219,7 @@ public class Signup extends JFrame implements ActionListener {
             if (textName.getText().equals("")) {
                 JOptionPane.showMessageDialog(null, "Fill all the fields");
             } else {
-                Con c = new Con();
+                Connn c = new Connn();
                 String q = "INSERT INTO signup (form_no, name, father_name, DOB, email, martial_status, address, city, pincode, state) VALUES ('" + formno + "', '" + name + "','" + fname + "','" + dob + "','" + email + "','" + marital + "', '" + address + "', '" + city + "','" + pincode + "','" + state + "' )";
                 c.statement.executeUpdate(q);
                 new Signup2(formno);
